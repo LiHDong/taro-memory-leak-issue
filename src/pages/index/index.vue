@@ -1,7 +1,5 @@
 <template>
-  <view class="index">
-    <text>{{ msg }}</text>
-  </view>
+  <view v-html="msg">2333</view>
 </template>
 
 <script>
@@ -10,7 +8,7 @@ import './index.css'
 
 export default {
   setup () {
-    const msg = ref('Hello world')
+    const msg = ref(`<style > </style>`)
     return {
       msg
     }
